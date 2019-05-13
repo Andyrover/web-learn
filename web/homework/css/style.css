@@ -1,0 +1,161 @@
+
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #F0F0F0;
+}
+ .li {
+	 display: inline;
+	 }
+
+ 
+/*头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  background-image: url(../img/banner.jpg);
+}
+ 
+.header h1 {
+  font-size: 50px;;
+  color: #F0FFFF;
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color:#000000;
+  text-align: center;
+  font-family: "新宋体";
+  font-size: 30px;
+  padding: 10px 10px;
+}
+ 
+/* 导航条链接 */
+.topnav a {
+  float: center;
+  display: inline;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+/* 创建两列 */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+  background-color:lightblue;
+  border-radius: 1.25rem;
+  margin-top: 120px;
+  margin-left: 1%;
+  box-shadow: 10px 10px 5px #AAAAAA;
+  
+}
+ 
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 70%;
+  background-color:#F0FFFF;
+  border-radius: 1.25rem;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 3%;
+  margin-right: 1%;
+  box-shadow: 10px 10px 5px #AAAAAA;
+}
+
+.centercolumn{
+	float: initial;
+	background-color:#F0FFFF;
+	border-radius: 1.25rem;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 1%;
+	margin-right: 1%;
+	box-shadow: 10px 10px 5px #AAAAAA;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #DDDDDD;
+  margin: 20px;
+  }
+  
+  .container {
+	margin:auto;
+	width: 400px;
+	height: 300px;
+	overflow: hidden; 
+}
+ 
+.photo {
+	width: 1200px;
+	animation: switch 5s ease-out infinite;
+}
+ 
+.photo > img {
+	float: left;
+	width: 400px;
+	height: 300px;
+}
+ 
+@keyframes switch {
+	0%, 25% {
+		margin-left: 0;
+	}
+	35%, 60% {
+		margin-left: -400px;
+	}
+	70%, 100% {
+		margin-left: -800px;
+	}
+}
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 20px;
+	margin-left: 0;
+	margin-top: 20px;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
