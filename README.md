@@ -28,5 +28,58 @@ ___粗斜体文本___
 
 <u>下划线</u>
 
-脚注 [^foot]！  
-[^foot]: 这是脚注！
+* 第一项列表
+- 第二项
++ 第三项
+
+1. 列表
+    * 列表嵌套
+    - 列表嵌套
+2. 列表
+3. 列表
+
+> 区块
+>> 区块  
+>>区块
+>>> 区块  
+区块  
+区块
+
+>区块  
+区块  
+区块
+
+区块
+
+`print()`函数
+
+    #include<stdio.h>
+    void main()
+    {
+        printf("hello");
+    }
+
+```c
+#include<stdio.h>
+void main()
+{
+    printf("hello");
+}
+```
+[百度](https://baidu.com)  
+<https://www.baidu.com>  
+百度[baidu][1]
+
+[1]:https://baidu.com
+
+![QQ](./web/homework/img/qq.png "qq图标")
+
+<img src="./web/homework/img/qq.png" width=50>
+
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+\\  
+\*  
+\#
