@@ -79,6 +79,15 @@ body {
   box-shadow: 10px 10px 5px #AAAAAA;
 }
 
+.rightcolumn2 {
+  float: left;
+  margin-left: 3%;
+  margin-top: 20px;
+  width: 70%;
+  background-color:#555;
+  padding: 20px 20px;
+}
+
 .centercolumn{
 	float: initial;
 	background-color:#F0FFFF;
@@ -91,12 +100,33 @@ body {
 }
  
 /* 文章卡片效果 */
-.card {
-  background-color: white;
-  padding: 20px;
+#card {
+  background-color: #F0FFFF;
+  float: left;
+  width: 35%;
+  margin-left: 3%;
   margin-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 1.25rem;
+  box-shadow: 10px 10px 5px #AAAAAA;
 }
  
+#title{
+text-decoration: none;
+color:#555;
+}
+
+#card2 {
+  background-color:#F0FFFF;
+  border-radius: 1.25rem;
+  float: left;
+  width: 34%;
+  margin-left: 1%;
+  padding: 10px 20px 15px;
+  box-shadow: 10px 10px 5px #AAAAAA;
+
+  margin-top: 20px;
+}
 /* 列后面清除浮动 */
 .row:after {
   content: "";
@@ -113,10 +143,10 @@ body {
   }
   
   .container {
-	margin:auto;
+  margin: auto;
 	width: 400px;
 	height: 300px;
-	overflow: hidden; 
+  overflow: hidden; 
 }
  
 .photo {
@@ -128,8 +158,8 @@ body {
 	float: left;
 	width: 400px;
 	height: 300px;
-}
- 
+} 
+
 @keyframes switch {
 	0%, 25% {
 		margin-left: 0;
