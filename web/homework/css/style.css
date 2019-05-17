@@ -8,9 +8,17 @@ body {
   padding: 10px;
   background: #F0F0F0;
 }
- .li {
-	 display: inline;
-	 }
+/* 链接样式 */
+ li {
+   display: inline;
+   }
+  li a{
+    color: #555;
+
+   }
+   li a:hover{
+     color: red;
+   }
 
  
 /*头部标题 */
@@ -38,7 +46,6 @@ body {
  
 /* 导航条链接 */
 .topnav a {
-  float: center;
   display: inline;
   color: #f2f2f2;
   text-align: center;
@@ -52,7 +59,6 @@ body {
   color: black;
 }
  
-/* 创建两列 */
 /* Left column */
 .leftcolumn {   
   float: left;
@@ -87,33 +93,31 @@ body {
   background-color:#555;
   padding: 20px 20px;
 }
-
+/* 中间栏 */
 .centercolumn{
 	float: initial;
 	background-color:#F0FFFF;
 	border-radius: 1.25rem;
-	padding-bottom: 20px;
+	padding: 20px 20px;
 	margin-top: 20px;
 	margin-left: 1%;
 	margin-right: 1%;
 	box-shadow: 10px 10px 5px #AAAAAA;
 }
+.centercolumn a{
+  font-weight: bold;
+}
  
-/* 文章卡片效果 */
+/* 卡片效果 */
 #card {
   background-color: #F0FFFF;
   float: left;
   width: 35%;
   margin-left: 3%;
   margin-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   border-radius: 1.25rem;
   box-shadow: 10px 10px 5px #AAAAAA;
-}
- 
-#title{
-text-decoration: none;
-color:#555;
 }
 
 #card2 {
@@ -126,6 +130,14 @@ color:#555;
   box-shadow: 10px 10px 5px #AAAAAA;
 
   margin-top: 20px;
+}
+ /* 标题 */
+#title{
+text-decoration: none;
+color:#555;
+}
+#title:hover{
+  color: red;
 }
 /* 列后面清除浮动 */
 .row:after {
@@ -174,7 +186,7 @@ color:#555;
  
 /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+  .leftcolumn, .rightcolumn, #card, #card2 {   
     width: 100%;
     padding: 20px;
 	margin-left: 0;
@@ -182,10 +194,10 @@ color:#555;
   }
 }
  
-/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局
 @media screen and (max-width: 400px) {
   .topnav a {
     float: none;
     width: 100%;
   }
-}
+} */
