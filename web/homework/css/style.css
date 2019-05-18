@@ -96,7 +96,7 @@ body {
 /* 中间栏 */
 .centercolumn{
 	float: initial;
-	background-color:#F0FFFF;
+  background-color:#F0FFFF;
 	border-radius: 1.25rem;
 	padding: 20px 20px;
 	margin-top: 20px;
@@ -201,3 +201,4 @@ color:#555;
     width: 100%;
   }
 } */
+
