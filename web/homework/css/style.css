@@ -95,7 +95,7 @@ body {
 }
 /* 中间栏 */
 .centercolumn{
-	float: initial;
+	
   background-color:#F0FFFF;
 	border-radius: 1.25rem;
 	padding: 20px 20px;
@@ -184,7 +184,7 @@ color:#555;
 	}
 }
  
-/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+/*屏幕尺寸小于 800px 时，两列布局改为上下布局 */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn, #card, #card2 {   
     width: 100%;
@@ -194,11 +194,52 @@ color:#555;
   }
 }
  
-/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-} */
+.photoa{
+  background:#F0FFFF;
+  float: left;
+  width: 30%;
+  margin: 20px;
+  border: 10px solid gold;
+  border-radius: 20px 50px;
+}
+.photoa img{
+  display:block;
+  margin: auto;
+  width: 100%;
+  border-radius: 20px 50px;
 
+}
+
+.photob{
+  background:#F0FFFF;
+  float: left;
+  width: 30%;
+  margin: 20px;
+  border: 10px solid gold;
+
+  border-radius: 20px;
+  box-shadow: #555 5px 5px;
+}
+.photob img{
+  display:block;
+  margin: auto;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.photoc{
+  background:#F0FFFF;
+  float: left;
+  width: 30%;
+  margin: 20px;
+ border: 10px solid gold;
+
+  border-radius: 50%;
+  box-shadow: #555 5px 5px;
+}
+.photoc img{
+  display:block;
+  margin: auto;
+  width: 100%;
+  border-radius: 50%;
+}
