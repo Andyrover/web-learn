@@ -8,16 +8,26 @@ body {
   padding: 10px;
   background: #F0F0F0;
 }
-/* 链接样式 */
- li {
+/* 无序列表样式 */
+ul li {
    display: inline;
    }
-  li a{
+  ul li a{
     color: #555;
 
    }
-   li a:hover{
+  ul li a:hover{
      color: red;
+   }
+
+   /* 有序列表 */
+   ol li{
+     color: #555;
+     font-size: 40px;
+   }
+   ol li audio{
+     float: right;
+     height: 40px;
    }
 
  
@@ -131,6 +141,27 @@ body {
 
   margin-top: 20px;
 }
+#card3{
+  background-color:#F0FFFF;
+  border-radius: 1.25rem;
+  float: left;
+  width: 35%;
+  margin-top: 1%;
+  margin-left: 1%;
+  padding: 10px 20px 15px;
+  box-shadow: 10px 10px 5px #AAAAAA;
+}
+
+#card4{
+  background-color:#F0FFFF;
+  border-radius: 1.25rem;
+  float: left;
+  width: 62%;
+  margin-top: 1%;
+  margin-left: 1%;
+  padding: 10px 20px 15px;
+  box-shadow: 10px 10px 5px #AAAAAA;
+}
  /* 标题 */
 #title{
 text-decoration: none;
@@ -186,7 +217,7 @@ color:#555;
  
 /*屏幕尺寸小于 800px 时，两列布局改为上下布局 */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn, #card, #card2 {   
+  .leftcolumn, .rightcolumn, #card, #card2,#card3,#card4 {   
     width: 100%;
     padding: 20px;
 	margin-left: 0;
@@ -199,8 +230,9 @@ color:#555;
   float: left;
   width: 30%;
   margin: 20px;
-  border: 10px solid gold;
+  border: 8px solid cyan ;
   border-radius: 20px 50px;
+  box-shadow: #555 5px 5px;
 }
 .photoa img{
   display:block;
@@ -215,8 +247,7 @@ color:#555;
   float: left;
   width: 30%;
   margin: 20px;
-  border: 10px solid gold;
-
+  border: 8px solid cyan;
   border-radius: 20px;
   box-shadow: #555 5px 5px;
 }
@@ -232,7 +263,7 @@ color:#555;
   float: left;
   width: 30%;
   margin: 20px;
- border: 10px solid gold;
+ border: 8px solid cyan;
 
   border-radius: 50%;
   box-shadow: #555 5px 5px;
